@@ -1,6 +1,7 @@
 $darkGreen: #2E4F21;
 $lightGreen: #A0F1BD;
 $bannerBg: #D2F8DC;
+$disabledDarkGreen: #506349;
 
 *{
   color: $darkGreen;
@@ -64,9 +65,20 @@ header {
   @include light-btn;
   &:hover {
     background-color: $lightGreen;
+    color: $darkGreen;
     cursor: pointer;
     transition: background-color 0.5s ease;
-  } 
+  }
+}
+
+.dark-light-btn {
+  @include dark-btn;
+    &:hover {
+    background-color: $lightGreen;
+    color: $darkGreen;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
 }
 
 // Main Banner Section
@@ -136,9 +148,6 @@ header {
   margin-top: 40px;
 }
 
-.review-text {
-  font-size: 30px;
-}
 
 // .vertical-line {
 //   display: flex;
@@ -172,7 +181,23 @@ header {
 // 
 .footer-section {
   background-color: $darkGreen;
+}
 
+// Services Page - Company Onboarding
+.large-number {
+  font-size: 192px;
+  font-weight: 100;
+  color: $disabledDarkGreen;
+}
+
+.onboard-title {
+  font-size: 60px;
+  color: $disabledDarkGreen;
+}
+
+.onboard-text {
+  font-size: 30px;
+  color: $disabledDarkGreen;
 }
 
 // Tablet View Styling
@@ -197,6 +222,18 @@ header {
   p {
     font-size: 18px;
   }
+}
+
+
+// Services Page - Company Onboarding
+.onboard-title {
+  font-size: 48px;
+  color: $disabledDarkGreen;
+}
+
+.onboard-text {
+  font-size: 26px;
+  color: $disabledDarkGreen;
 }
 
 }
@@ -253,10 +290,22 @@ header {
   }
 }
 
+// Services Page - Company Onboarding
+.onboard-title {
+  font-size: 32px;
+  color: $disabledDarkGreen;
+}
+
+.onboard-text {
+  font-size: 22px;
+  color: $disabledDarkGreen;
+}
+
 // footer section
 .footer-section {
   .footer-text {
     font-size: 12px;
   }
 }
+
 }

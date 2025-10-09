@@ -35,6 +35,20 @@ header {
 }
 .light-button:hover {
   background-color: #A0F1BD;
+  color: #2E4F21;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.dark-light-btn {
+  background-color: #2E4F21;
+  color: white;
+  border-radius: 35px;
+  font-size: 12px;
+}
+.dark-light-btn:hover {
+  background-color: #A0F1BD;
+  color: #2E4F21;
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
@@ -100,10 +114,6 @@ header {
   margin-top: 40px;
 }
 
-.review-text {
-  font-size: 30px;
-}
-
 .full-img-banner {
   width: 100%;
   margin-top: 200px;
@@ -129,6 +139,22 @@ header {
   background-color: #2E4F21;
 }
 
+.large-number {
+  font-size: 192px;
+  font-weight: 100;
+  color: #506349;
+}
+
+.onboard-title {
+  font-size: 60px;
+  color: #506349;
+}
+
+.onboard-text {
+  font-size: 30px;
+  color: #506349;
+}
+
 @media screen and (max-width: 768px) {
   .main-heading {
     font-size: 58px;
@@ -142,6 +168,14 @@ header {
   }
   .custom-plan p {
     font-size: 18px;
+  }
+  .onboard-title {
+    font-size: 48px;
+    color: #506349;
+  }
+  .onboard-text {
+    font-size: 26px;
+    color: #506349;
   }
 }
 @media screen and (max-width: 480px) {
@@ -181,6 +215,14 @@ header {
   }
   .custom-plan p {
     font-size: 16px;
+  }
+  .onboard-title {
+    font-size: 32px;
+    color: #506349;
+  }
+  .onboard-text {
+    font-size: 22px;
+    color: #506349;
   }
   .footer-section .footer-text {
     font-size: 12px;
