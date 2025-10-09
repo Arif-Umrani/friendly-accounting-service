@@ -1,0 +1,262 @@
+$darkGreen: #2E4F21;
+$lightGreen: #A0F1BD;
+$bannerBg: #D2F8DC;
+
+*{
+  color: $darkGreen;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+@mixin dark-btn {
+  background-color: $darkGreen;
+  color: white;
+  border-radius: 35px;
+  font-size: 12px;
+}
+
+@mixin light-btn {
+  color: $darkGreen;
+  border-radius: 15px;
+  background-color: white;
+  padding: 10px;
+  font-size: 12px;
+}
+
+@mixin banner-title {
+  font-size: 60px;
+  font-weight: 400;
+}
+
+@mixin horizontal-line {
+  margin-left: 50px;
+  width: 80%;
+  height: .3px;
+}
+
+@mixin card {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+// Header 
+header {
+  background-color: $lightGreen;
+}
+.navbar-brand.logo {
+  color: $darkGreen;
+}
+
+ .dark-button {
+  @include dark-btn;
+  &:hover {
+    background-color: white;
+    color: $darkGreen;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }  
+}
+
+.light-button {
+  @include light-btn;
+  &:hover {
+    background-color: $lightGreen;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  } 
+}
+
+// Main Banner Section
+.main-banner{
+  margin-top: 150px;
+}
+.main-heading {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.atlas-img img {
+  width: 100%;
+}
+
+.home-about {
+  margin-top: 100px;
+  
+    button {
+      &:hover {
+        background-color: $lightGreen;
+      }
+    }
+}
+// About Section
+.sub-title {
+  margin: auto;
+  @include banner-title;
+}
+
+// Small banners styling
+.banner-sm {
+  background-color: $bannerBg;
+  border-radius: 20px;
+  margin-top: 100px;
+
+  .banner-sm-img {
+    width: 80%;
+  }
+  .banner-sm-title {
+    font-size: 40px;
+  }
+  .banner-sm-text {
+    letter-spacing: 1px;
+  }
+}
+
+// client Review
+.dark-card {
+  @include card;
+  background-color: $darkGreen;
+  border-radius: 15px;
+  color: white;
+  padding: 20px;
+}
+// .horizontal-line {
+//   @include  horizontal-line;
+//   background-color: rgba(130, 129, 129, 0.492);
+// }
+
+.light-card {
+  @include card;
+  margin-top: 60px;
+  color: $darkGreen;
+}
+.card-header {
+  margin-top: 40px;
+}
+
+.review-text {
+  font-size: 30px;
+}
+
+// .vertical-line {
+//   display: flex;
+//   width: 1%;
+//   height: 650px;
+//   background-color: rgba(130, 129, 129, 0.224);
+// }
+
+.full-img-banner {
+  width: 100%;
+  margin-top: 200px;
+}
+
+// Custom built plan
+.custom-plan {
+  height: 375px;
+  padding: 0;
+  h2 {
+    font-size: 50px;
+    font-weight: 300;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+.custom-plan-banner img {
+  height: 375px;
+}
+
+// 
+.footer-section {
+  background-color: $darkGreen;
+
+}
+
+// Tablet View Styling
+@media screen and (max-width: 768px) {
+ 
+// Main Banner Section
+  .main-heading {
+  font-size: 58px;
+  font-weight: 600;
+}
+
+//Client Review
+.sub-title {
+  font-size: 48px;
+} 
+
+// Custom built plan Banner
+.custom-plan {
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+}
+
+// Mobile View Styling
+@media screen and (max-width: 480px) {
+
+  // Main Banner Section
+  .main-banner{
+  margin-top: 50px;
+}
+.main-heading {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+  // Tax Preparation and Filing
+  .banner-sm {
+  background-color: $bannerBg;
+  border-radius: 20px;
+  margin-top: 100px;
+  padding: 0;
+  
+  .banner-sm-title {
+    width: 100%;
+    text-align: center;
+  }
+  .banner-sm-text {
+    width: 100%;
+  }
+  .light-button {
+    padding: 5px;
+  }
+}
+
+// client review
+
+.review-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sub-title {
+  font-size: 32px;
+} 
+
+// Custom built plan Banner
+.custom-plan {
+  h2 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+// footer section
+.footer-section {
+  .footer-text {
+    font-size: 12px;
+  }
+}
+}

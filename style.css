@@ -1,0 +1,188 @@
+* {
+  color: #2E4F21;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #A0F1BD;
+}
+
+.navbar-brand.logo {
+  color: #2E4F21;
+}
+
+.dark-button {
+  background-color: #2E4F21;
+  color: white;
+  border-radius: 35px;
+  font-size: 12px;
+}
+.dark-button:hover {
+  background-color: white;
+  color: #2E4F21;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.light-button {
+  color: #2E4F21;
+  border-radius: 15px;
+  background-color: white;
+  padding: 10px;
+  font-size: 12px;
+}
+.light-button:hover {
+  background-color: #A0F1BD;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.main-banner {
+  margin-top: 150px;
+}
+
+.main-heading {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.atlas-img img {
+  width: 100%;
+}
+
+.home-about {
+  margin-top: 100px;
+}
+.home-about button:hover {
+  background-color: #A0F1BD;
+}
+
+.sub-title {
+  margin: auto;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.banner-sm {
+  background-color: #D2F8DC;
+  border-radius: 20px;
+  margin-top: 100px;
+}
+.banner-sm .banner-sm-img {
+  width: 80%;
+}
+.banner-sm .banner-sm-title {
+  font-size: 40px;
+}
+.banner-sm .banner-sm-text {
+  letter-spacing: 1px;
+}
+
+.dark-card {
+  font-size: 20px;
+  font-weight: 100;
+  background-color: #2E4F21;
+  border-radius: 15px;
+  color: white;
+  padding: 20px;
+}
+
+.light-card {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 60px;
+  color: #2E4F21;
+}
+
+.card-header {
+  margin-top: 40px;
+}
+
+.review-text {
+  font-size: 30px;
+}
+
+.full-img-banner {
+  width: 100%;
+  margin-top: 200px;
+}
+
+.custom-plan {
+  height: 375px;
+  padding: 0;
+}
+.custom-plan h2 {
+  font-size: 50px;
+  font-weight: 300;
+}
+.custom-plan p {
+  font-size: 18px;
+}
+
+.custom-plan-banner img {
+  height: 375px;
+}
+
+.footer-section {
+  background-color: #2E4F21;
+}
+
+@media screen and (max-width: 768px) {
+  .main-heading {
+    font-size: 58px;
+    font-weight: 600;
+  }
+  .sub-title {
+    font-size: 48px;
+  }
+  .custom-plan h2 {
+    font-size: 35px;
+  }
+  .custom-plan p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-banner {
+    margin-top: 50px;
+  }
+  .main-heading {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .banner-sm {
+    background-color: #D2F8DC;
+    border-radius: 20px;
+    margin-top: 100px;
+    padding: 0;
+  }
+  .banner-sm .banner-sm-title {
+    width: 100%;
+    text-align: center;
+  }
+  .banner-sm .banner-sm-text {
+    width: 100%;
+  }
+  .banner-sm .light-button {
+    padding: 5px;
+  }
+  .review-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sub-title {
+    font-size: 32px;
+  }
+  .custom-plan h2 {
+    font-size: 28px;
+  }
+  .custom-plan p {
+    font-size: 16px;
+  }
+  .footer-section .footer-text {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */
