@@ -139,6 +139,14 @@ header {
   background-color: #2E4F21;
 }
 
+.financial-banner2 {
+  display: none;
+}
+
+.services-full-banner2 {
+  display: none;
+}
+
 .large-number {
   font-size: 192px;
   font-weight: 100;
@@ -169,12 +177,24 @@ header {
   .custom-plan p {
     font-size: 18px;
   }
+  .financial-banner1 {
+    display: none;
+  }
+  .financial-banner2 {
+    display: block;
+  }
+  .services-full-banner1 {
+    display: none;
+  }
+  .services-full-banner2 {
+    display: block;
+  }
   .onboard-title {
     font-size: 48px;
     color: #506349;
   }
   .onboard-text {
-    font-size: 26px;
+    font-size: 16px;
     color: #506349;
   }
 }
@@ -216,12 +236,18 @@ header {
   .custom-plan p {
     font-size: 16px;
   }
+  .financial-banner1 {
+    display: none;
+  }
+  .services-full-banner1 {
+    display: none;
+  }
   .onboard-title {
     font-size: 32px;
     color: #506349;
   }
   .onboard-text {
-    font-size: 22px;
+    font-size: 16px;
     color: #506349;
   }
   .footer-section .footer-text {
