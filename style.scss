@@ -262,6 +262,12 @@ header {
   font-size: 30px;
   color: $disabledDarkGreen;
 }
+
+// Booking Page 
+header.booking-header {
+  background-color: $bannerBg;
+}
+
 // Desktop view Styling
 @media screen and (min-width: 991px) {
   .banner-sm-section {
